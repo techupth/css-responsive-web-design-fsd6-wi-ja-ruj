@@ -36,10 +36,11 @@ h2 {
 }
 
 .container-content {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1432px;
   margin-top: 70px;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   gap: 30px;
 }
@@ -52,6 +53,7 @@ h2 {
   border: 1px solid rgba(237, 237, 237, 1);
   border-radius: 8px;
   padding: 30px;
+  box-sizing: border-box;
 }
 
 .jop-Category {
@@ -128,11 +130,9 @@ h2 {
   align-items: center;
 }
 
-@media only screen and (max-width: 600px) {
+/* @media only screen and (max-width: 600px) {
   .container-content {
-    display: grid;
-    grid-template-columns: 1fr;
     margin-top: 70px;
     gap: 30px;
   }
-}
+} */
